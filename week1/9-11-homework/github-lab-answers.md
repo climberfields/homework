@@ -20,3 +20,12 @@ Why is it important to use -- when changing files back to a previous state?
 
 Why might you want to reset your files back to a previous commit? 
 If the scope of the project has been changed, or a terminal error has been logged. 
+
+What command do you use to create a branch?
+git checkout -b _____name of branch
+
+What command do you use to use a different branch?
+git checkout _____name of branch
+
+Why would you want to use a branch other than the default master?
+You don't want to work on the main one to minimize risk of corruption to information 
