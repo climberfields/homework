@@ -3,7 +3,14 @@ h1 {
 	font-style: Noto Serif KR;
 
 }
-
+.topnav a {
+    float: left;
+    color: #A34B7C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
 h3 {
 	color: red;
 }
@@ -11,3 +18,14 @@ h3 {
 body {line-height: 80%;
 
 ;}
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
