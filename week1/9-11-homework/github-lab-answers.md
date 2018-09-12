@@ -29,3 +29,7 @@ git checkout _____name of branch
 
 Why would you want to use a branch other than the default master?
 You don't want to work on the main one to minimize risk of corruption to information 
+
+Give an example for when you would use git merge and give an example for when it would be better to submit a pull request to have your branch merged.
+
+What command do you use to send all of the work that you've done locally to your remote repository? git push origin master
