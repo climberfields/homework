@@ -23,3 +23,17 @@ const calculateSide = (num1, num2) => {
 	console.log(d);
 }
 calculateSide(8, 6);
+
+5. // Sum Array
+
+6. // Prime Numbers
+
+const checkPrime = (value) => {
+    for(var i = 2; i < value; i++) {
+        if(value % i === 0) {
+            return false;
+        }
+    }
+    return value > 1;
+}
+checkPrime(7)
