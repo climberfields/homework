@@ -43,4 +43,7 @@ Loops
 
 a. 1 for ( let i = 0; i < 10; i++) {console.log(i)};
    2 for (let i = 40; i < 400; i++) {console.log(i)};
+   3 for ( let i = 12; i <= 4000; i+3) {console.log(i)} 
+   
+   b. for for (let i = 0; i < 100; i++) { if (i % 2 === 0) console.log(i);}
    
