@@ -86,3 +86,80 @@ D. Changing Values
 ourClass[4] = "Octocat"
 ourClass.push("Cloud City");
 
+E. Mix it up
+const myArray =[5, 10, 500, 20];
+myArray.push("Egon", "Dupont")
+delete.myArray[0]
+
+F. Biggie Smalls 
+
+let num = 20;
+
+if (num < 100) { console.log("little number");} else {if (num >= 100) {console.log("big number");}
+}
+
+G. Monkey in the middle
+if (i < 5) { console.log("little number");} else {
+	if (i > 10) {console.log("big number");} else {console.log("monkey");}
+}
+
+H. Whats in your closet
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+
+IV Functions
+
+B. printCool
+
+const printCool = (name) => {console.log(name + " is cool");}
+
+C. calculateCube 
+
+const calculateCube = (num) => {console.log(Math.pow(num, 3));}
+
+D. Vowel
+
+const isVowel = (string) => { if (string == 'a, e, i, o, u'); {
+	console.log(true)
+}
+else {
+	console.log(false)
+};
+}
+
+E. getTwoLengths
+
+const getTwoLengths = (string1, string2) => {console.log(string1.length, string2.length);}
+
+F. getMultipleLengths 
+const getMultipleLengths = () => 
