@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <%=pokemon.name%>
+
+    <% for (let i = 0; i < pokemon.length; i++) { %>
+    <ul class = 'pokemon'>
+        <%=   pokemon[i].name; %>
+    <img src="<%=pokemon[i].img %>" alt="">   
+    <a href="/pokemon/<%=i%>">Link to Page</a>
+    </ul>
+    <% } %>
+    <!--
+      <form action="/pokemon" method="POST">
+    Name: <input type="text" name="name"><br/>
+    img: <img src="" alt="">
+    <input type="submit">
+-->
+    </form>
+</body>
+
+</html>
