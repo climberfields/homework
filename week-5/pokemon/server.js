@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
 
 //
-//app.get('/pokemon/', (req, res) => {
+//app.get('/pokeon/', (req, res) => {
 //    console.log('send works')
 //    res.send(Pokemon);
 //})
