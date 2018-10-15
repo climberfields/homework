@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercises</h1>
+    <ul>
+        <% for(let i = 0; i < exercises.length; i++) {%>
+        <%= exercises[i].name; %>
+        <%= if(exercises[i].cardio === true) {%>
+        This is a cardio exercise 
+        <%} else { %> This is not a cardio exercise }%>
+        <%= if(exercises[i].weights === true) {%>
+        You need weights for this
+        <%} else { %> You don't need weights for this }%>
+        <img src="<%=exercises[i].img%>" alt="">
+    </ul>
+
+    <% } %>
+
+</body>
+
+</html>

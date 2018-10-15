@@ -1,4 +1,4 @@
-const vampire = {
+const vampire = vampireSchema{
   name: ,
   hair_color: ,
   eye_color: ,
@@ -11,7 +11,7 @@ const vampire = {
 
 
 
-const dracula = {
+const draculaSchema = {
     name: 'Dr.Acula',
     hair_color: 'black',
     eye_color: 'black',
@@ -23,3 +23,4 @@ const dracula = {
 };
 
 
+module.exports = mongoose.model('vampire', draculaSchema);
