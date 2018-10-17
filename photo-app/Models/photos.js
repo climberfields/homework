@@ -1,7 +1,7 @@
-const photos = [{
+const photosSchema = new mongoose.Schema [{
     name: String,
     location: String
 }]
 
 
-models.exports = photos;
+module.exports = mongoose.model('Photos', photosSchema);
