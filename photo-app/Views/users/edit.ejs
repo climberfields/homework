@@ -1,0 +1,35 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Edit <%=users.name%>'s Info</h1>
+    <ul>
+      <li>
+         <a href="/">Home</a>
+          
+      </li>  
+      <li>
+          <a href="/Users">Users Index</a>
+      </li>
+      <main>
+          <h2>
+              User Attributes
+          </h2>
+          <form action="/users/<%=users._id%>?_method=PUT" method="POST">
+              <select name="userId"> <%for (let i = 0; i < users.length; i++) {%>                      <option value="<%=users[i].id%>"
+              <%if(users[i]._id.toString()=== userPhoto._id.toString()) {%>
+              selected
+              <%}%> ></option>
+              <%}%>
+              </select>
+              <br>
+                <br>
+        <input type="text" name="user" value="<%=users.name%>"/><br/>
+        <textarea name="body"><%=users.location%></textarea><br/>
+        <input type="submit" value="Update User"/>
+          </form>
+      </main>
+    </ul>
+</body>
+</html>

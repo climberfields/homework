@@ -5,10 +5,33 @@
     <title>Document</title>
 </head>
 <body>
+   <h1>Edit <%=photos.name%>'s Info</h1>
     <ul>
       <li>
+         <a href="/">Home</a>
           
       </li>  
+      <li>
+          <a href="/Phots">Photos Index</a>
+      </li>
+      <main>
+          <h2>
+              Photo Attributes
+          </h2>
+          <form action="/photos/<%=photos._id%>?_method=PUT" method="POST">
+              <select name="photoId"> <%for (let i = 0; i < photos.length; i++) {%>                      <option value="<%=photo[i].id%>"
+              <%if(photos[i]._id.toString()=== articleAuthor._id.toString()) {%>
+              selected
+              <%}%> ></option>
+              <%}%>
+              </select>
+              <br>
+                <br>
+        <input type="text" name="photos" value="<%=phots.name%>"/><br/>
+        <textarea name="body"><%=photos.location%></textarea><br/>
+        <input type="submit" value="Update Photos"/>
+          </form>
+      </main>
     </ul>
 </body>
 </html>
